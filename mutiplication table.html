@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>motiplication table</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let x= '<table border="1" style="border: 1px solid orange"> '
+    for (let i = 1; i < 10; i++) {
+        x+='<tr>'
+        for (let j = 2; j < 9; j++) {
+            x+=`<td> ${i}*${j}=${i*j} </td>`
+        }x+='<tr>'
+    }x+='<table>'
+    document.write(x)
+</script>

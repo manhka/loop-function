@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heart_shaped</title>
+</head>
+<body>
+<script>
+  let x=''
+  for (let i = 1; i <= 6; i++) {
+      for (let j = 1; j <= 7; j++) {
+          if (i===1&(j===2||j===3||j===5||j===6)){
+              x+='*'
+          }else if (i===1&(j===1||j===4||j===7)){
+              x+='&nbsp&nbsp'
+          }
+          else if (i===2&(j===1||j===4||j===7)){
+              x+='*'
+          }else if(i===2&(j===2||j===3||j===5||j===6)) {
+              x += '&nbsp&nbsp'
+          }
+          else if (i===3&(j===1||j===7)){
+              x+='*'
+          }else if(i===3&(j===2||j===3||j===5||j===6||j===4)) {
+              x += '&nbsp&nbsp'
+          }
+          else if (i===4&(j===2||j===6)){
+              x+='*'
+          }else if(i===4&(j===1||j===3||j===5||j===7||j===4)) {
+              x += '&nbsp&nbsp'
+          }
+          else if (i===5&(j===3||j===5)){
+              x+='*'
+          }else if(i===5&(j===1||j===2||j===4||j===7||j===6)) {
+              x += '&nbsp&nbsp'
+          }
+          else if (i===6&(j===4)){
+              x+='*'
+          }else if(i===6&(j===1||j===2||j===5||j===7||j===6||j===3)) {
+              x += '&nbsp&nbsp'
+          }
+
+      }x+='<br>'
+
+  }document.write(x)
+</script>
+</body>
+</html>

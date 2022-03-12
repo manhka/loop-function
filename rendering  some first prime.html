@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prime</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let count=0
+    let num=+prompt('enter your nunber')
+    for (let i = 2; count<=num ; i++) {
+        let check=true
+        for (let j = 2; j < i; j++) {
+            if (i%j===0){
+                check=false
+                break
+            }
+        }if(check){
+            count++
+            document.write( i+ ':is a prime' + '<br>')
+        }
+    }document.write('-----------------the number of prime is :'+count)
+</script>

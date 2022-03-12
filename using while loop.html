@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check -1 is stop</title>
+</head>
+<body>
+<button onclick="check()">check</button>
+
+</body>
+</html>
+<script>
+    function check(){
+        let sum=0;
+       let num= +prompt('enter your number to compare with the number:-1')
+        while(num!=-1){
+           num=+prompt('enter  your number')
+            sum+=num;
+           document.write('number is :'+num+'<br>')
+        }document.write('sum is:'+sum)
+    }
+</script>

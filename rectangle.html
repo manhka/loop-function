@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+</head>
+<body>
+<script>
+  let x=''
+  let width=+prompt('width')
+  let height=+prompt('height')
+  for (let i = 0; i <=height ; i++) {
+      for (let j = 0; j <= width; j++) {
+          if (i===0||j===0||i===height||j===width){
+              x+='*'
+          }else{
+              x+='&nbsp&nbsp'
+          }
+      }x+="<br>"
+  }document.write(x)
+</script>
+</body>
+</html>
